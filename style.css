@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Retro Number";
+    src: url("1900805.ttf");
+}
+:root {
+    font-family: "Retro Number";
+}
+html {
+    text-align: center;
+    font-size: 200%;
+    font-weight: 300%;
+}
+body {
+    width: 50%;
+    margin: auto auto;
+}
+div#calculator {
+    padding: 30px;
+    border-style: none;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, #8585ad, #3d3d5c);
+}
+div#displays {
+    text-align: right;
+    border-style: none;
+    border-radius: 15px;
+    font-size: 120%;
+    background-image: linear-gradient(to bottom, #ff9966, #ff5050);
+}
+.result {
+    margin: 10px;
+    line-height: 3;
+}
+.current {
+    margin: 10px;
+    line-height: 3;
+    border-top-style: solid;
+    border-top-color: crimson;
+}
+div#calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+button.number4 {
+    grid-column: 1;
+}
+button.decimal {
+    grid-column: -2;
+    grid-row: 2;
+}
+button.equal {
+    grid-column: -2;
+    grid-row: 3/ span 2;
+}
+button {
+    height: 100px;
+    border-radius: 1px;
+    font-family: "Retro Number";
+    font-size: inherit;
+    font-weight: inherit;
+    border-color: #cc99ff;
+    
+}
+button.operatorplus {
+    border-radius: 15px 1px 1px 1px;
+}
+button.operatordivide {
+    border-radius: 1px 15px 1px 1px;
+}
+button.clear {
+    border-radius: 1px 1px 15px 1px;
+}
+button.number0 {
+    border-radius: 1px 1px 1px 15px;
+}
+button.equal {
+    height: 200px;
+}
+.operatorplus, .operatorminus, .operatormultiply, .operatordivide {
+    background-image: linear-gradient(to bottom, #ff6666, #ff0066);
+}
+.number1, .number2, .number3, .number4, .number5, .number6, .number7, .number8, .number9, .number0, .number00 {
+    background-image: linear-gradient(to bottom, #66ffff, #3399ff);
+}
+.backspace, .equal, .clear, .decimal {
+    background-image: linear-gradient(to bottom, #993399, #ff33cc);
+}
